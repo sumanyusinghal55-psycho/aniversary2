@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>21 Years of Love 💍</title>
+
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #fff1c1, #f5b7b1);
+  font-family: Georgia, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Candle container */
+.candles {
+  position: fixed;
+  bottom: 40px;
+  display: flex;
+  gap: 60px;
+}
+
+/* Candle body */
+.candle {
+  width: 40px;
+  height: 120px;
+  background: #fff;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 0 25px rgba(255, 200, 80, 0.6);
+}
+
+/* Flame */
+.flame {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 35px;
+  background: radial-gradient(circle, #fff6a9 0%, #ffb703 60%, #ff7a00 100%);
+  border-radius: 50% 50% 50% 50%;
+  animation: flicker 0.15s infinite alternate;
+  box-shadow: 0 0 40px rgba(255, 180, 50, 0.9);
+}
+
+@keyframes flicker {
+  from { transform: translateX(-50%) scale(1); opacity: 0.9; }
+  to { transform: translateX(-50%) scale(1.1); opacity: 1; }
+}
+
+/* Card */
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 18px;
+  max-width: 650
+
