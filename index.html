@@ -20,7 +20,7 @@ body {
   background: rgba(255,255,255,0.95);
   padding: 30px;
   border-radius: 18px;
-  max-width: 600px;
+  max-width: 620px;
   width: 90%;
   text-align: center;
   box-shadow: 0 20px 40px rgba(0,0,0,0.25);
@@ -81,7 +81,7 @@ button:hover { background: #9b2c6f; }
   <div class="candle"><div class="flame"></div></div>
 </div>
 
-<!-- Background Music (safe source) -->
+<!-- Background Music -->
 <audio id="music">
   <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_5b0fbd7d39.mp3" type="audio/mpeg">
 </audio>
@@ -89,8 +89,8 @@ button:hover { background: #9b2c6f; }
 <div class="card" id="app">
   <h1>💐 Happy 21st Anniversary 💐</h1>
   <p>
-    21 years of love, patience, sacrifices,<br>
-    and standing together through everything ❤️
+    21 years of love, patience,<br>
+    sacrifices, and standing together ❤️
   </p>
   <button onclick="start()">Start the Celebration 🎶</button>
 </div>
@@ -150,15 +150,34 @@ function answer(points) {
 
 function showResult() {
   app.innerHTML = `
-    <h1>💍 21 Years of Togetherness 💍</h1>
-    <p>
+    <h1>💍 21 Years of Love 💍</h1>
+
+    <p style="font-size:18px; line-height:1.6;">
       Two candles.<br>
       One eternal flame.<br><br>
-      Love Score: <b>${score}</b> 💖<br><br>
-      Thank you Papa & Mummy<br>
-      for teaching us what true love means.
+
+      Through every smile and every storm,<br>
+      you chose each other — every single day.<br><br>
+
+      Love Score: <b>${score}</b> 💖
     </p>
-    <h2>❤️ Happy Anniversary ❤️</h2>
+
+    <h2 style="margin-top:25px;">
+      ❤️ Happy Anniversary Papa & Mummy ❤️
+    </h2>
+
+    <h1 style="
+      margin-top:30px;
+      font-size:36px;
+      color:#b83280;
+      letter-spacing:2px;
+    ">
+      WE LOVE YOU ❤️
+    </h1>
+
+    <p style="margin-top:10px; font-style:italic;">
+      — Your children
+    </p>
   `;
 }
 </script>
